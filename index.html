@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Alex Candela - Desarrollador Web Full Stack especializado en Laravel, Angular y Vue.js">
+  <title>Alex Candela - Web Developer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/dda3477dd5.js" crossorigin="anonymous"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- HEADER -->
+    <header>
+      <!-- Hamburger button (solo visible en mobile) -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="options">
+        <div class="idioma">
+          <span>Español</span>
+          <label class="switch">
+            <input type="checkbox" id="langToggle">
+            <span class="slider"></span>
+          </label>
+          <span>English</span>
+        </div>
+      </div>
+      
+      <nav class="links" id="navLinks">
+        <div class="links-btn">
+          <i class="fa-solid fa-circle-user"></i>
+          <a href="#presentacion" data-es="Sobre Mí" data-en="About Me">Sobre Mí</a>
+        </div>
+        <div class="links-btn">
+          <i class="fa-solid fa-star"></i>
+          <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+        </div>
+        <div class="links-btn">
+          <i class="fa-solid fa-briefcase"></i>
+          <a href="#experiencias" data-es="Experiencia" data-en="Experience">Experiencia</a>
+        </div>
+        <div class="links-btn">
+          <i class="fa-solid fa-code"></i>
+          <a href="#tecnologias" data-es="Tecnologías" data-en="Technologies">Tecnologías</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- PRESENTACIÓN -->
+      <section id="presentacion" class="presentacion section">
+        <div class="presentacion-img">
+          <img src="assets/images/alex3recortada.jpg" alt="Alex Candela Profile">
+        </div>
+        <div class="presentacion-info">
+          <div class="presentacion-info-nombre">
+            <h1>
+              <span data-es="Hola, soy " data-en="Hi, I'm ">Hola, soy </span>
+              <span class="name">Alex Candela</span>
+            </h1>
+            <img src="assets/images/bot.png" alt="bot">
+          </div>
+          <div class="presentacion-info-desc">
+            <p data-es="Curioso por naturaleza y meticuloso por elección, me esfuerzo por aprender algo nuevo cada día y me dedico a que cada detalle alcance la perfección."
+               data-en="Curious by nature and meticulous by choice, I strive to learn something new every day and dedicate myself to ensuring that every detail reaches perfection.">
+              Curioso por naturaleza y meticuloso por elección, me esfuerzo por aprender algo nuevo cada día y me dedico a que cada detalle alcance la perfección.
+            </p>
+          </div>
+          <div class="presentacion-info-botones">
+            <a href="https://www.linkedin.com/in/alex-candela-b31956228/" target="_blank" class="btn btn-linkedin">
+              <i class="fa-brands fa-linkedin"></i>Linkedin
+            </a>
+            <a href="https://github.com/alexcandela" target="_blank" class="btn btn-github">
+              <i class="fa-brands fa-github"></i>Github
+            </a>
+            <a href="assets/CV_AlexCandela.pdf" download class="btn btn-resume">
+              <i class="fa-solid fa-file"></i>Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="proyectos section">
+        <div class="titulo">
+          <div class="titulo-text">
+            <h3 data-es="Proyectos" data-en="Projects">Proyectos</h3>
+            <img src="assets/images/iconos/star.svg" alt="star">
+          </div>
+          <div class="titulo-hr">
+            <hr>
+          </div>
+        </div>
+        <div class="proyectos-lista">
+          <!-- Proyecto 1: 2048 -->
+          <div class="proyectos-lista-proyecto">
+            <div class="img">
+              <a href="https://2048-henna.vercel.app/" target="_blank">
+                <img src="assets/images/captura2048.png" alt="2048 Game">
+              </a>
+            </div>
+            <div class="info">
+              <div class="info-titulo">2048 Game</div>
+              <div class="info-desc" 
+                   data-es="Clon del juego 2048. Juego de puzzle donde combinas baldosas numeradas para alcanzar la cifra 2048."
+                   data-en="Clone of the 2048 game. A puzzle game where you combine numbered tiles to reach the number 2048.">
+                Clon del juego 2048. Juego de puzzle donde combinas baldosas numeradas para alcanzar la cifra 2048.
+              </div>
+              <div class="info-tech">
+                <i class="fa-brands fa-html5 html"></i>
+                <i class="fa-brands fa-css3-alt css"></i>
+                <i class="fa-brands fa-vuejs vue"></i>
+                <i class="fa-brands fa-sass sass"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Geturplan -->
+          <div class="proyectos-lista-proyecto">
+            <div class="img">
+              <a href="https://geturplanfrontend.vercel.app/" target="_blank">
+                <img src="assets/images/HomeGeturplan.png" alt="Geturplan">
+              </a>
+            </div>
+            <div class="info">
+              <div class="info-titulo">Geturplan</div>
+              <div class="info-desc"
+                   data-es="Aplicación donde los usuarios pueden publicar planes e interactuar con ellos mediante likes y comentarios."
+                   data-en="App where users can post plans and interact with them through likes and comments. Currently under development.">
+                Aplicación donde los usuarios pueden publicar planes e interactuar con ellos mediante likes y comentarios.
+              </div>
+              <div class="info-tech">
+                <i class="fa-brands fa-html5 html"></i>
+                <i class="fa-brands fa-css3-alt css"></i>
+                <i class="fa-brands fa-laravel laravel"></i>
+                <i class="fa-brands fa-angular angular"></i>
+                <i class="fa-brands fa-sass sass"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCIAS -->
+      <section id="experiencias" class="experiencias section">
+        <div class="titulo">
+          <div class="titulo-text">
+            <h3 data-es="Experiencia" data-en="Experience">Experiencia</h3>
+            <img src="assets/images/iconos/exp.svg" alt="experiencia">
+          </div>
+          <div class="titulo-hr">
+            <hr>
+          </div>
+        </div>
+        <div class="experiencias-lista">
+          <div class="exp">
+            <div class="exp-titulo">
+              <h3>Web Developer · Holzadac</h3>
+              <img src="assets/images/about.png" alt="about">
+            </div>
+            <div class="exp-desc">
+              <p data-es="Desarrollador web utilizando WordPress. Mi trabajo incluía crear diseños personalizados, implementar plugins para cursos y tiendas, garantizar la seguridad y optimizar el rendimiento de los sitios. Logré mejorar la experiencia del usuario y contribuir al éxito de varios proyectos web."
+                 data-en="Web developer using WordPress. My work involved creating custom designs, implementing plugins for courses and stores, ensuring security, and optimizing site performance. I succeeded in enhancing user experience and contributing to the success of several web projects.">
+                Desarrollador web utilizando WordPress. Mi trabajo incluía crear diseños personalizados, implementar plugins para cursos y tiendas, garantizar la seguridad y optimizar el rendimiento de los sitios. Logré mejorar la experiencia del usuario y contribuir al éxito de varios proyectos web.
+              </p>
+              <img src="assets/images/ai.png" alt="computer">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECNOLOGÍAS -->
+      <section id="tecnologias" class="tecnologias section">
+        <div class="titulo">
+          <div class="titulo-text">
+            <h3 data-es="Tecnologías" data-en="Technologies">Tecnologías</h3>
+            <img src="assets/images/iconos/code.svg" alt="code">
+          </div>
+          <div class="titulo-hr">
+            <hr>
+          </div>
+        </div>
+        <div class="tecnologias-lista">
+          <div class="tech">
+            <div class="tech-titulo">
+              <h4>Back End</h4>
+            </div>
+            <div class="tech-tecnologias">
+              <i class="fa-brands fa-php php"></i>
+              <i class="fa-brands fa-laravel laravel"></i>
+            </div>
+          </div>
+          <div class="tech">
+            <div class="tech-titulo">
+              <h4>Front End</h4>
+            </div>
+            <div class="tech-tecnologias">
+              <i class="fa-brands fa-html5 html"></i>
+              <i class="fa-brands fa-css3-alt css"></i>
+              <i class="fa-brands fa-js js"></i>
+              <i class="fa-brands fa-vuejs vue"></i>
+              <i class="fa-brands fa-angular angular"></i>
+            </div>
+          </div>
+          <div class="tech">
+            <div class="tech-titulo">
+              <h4 data-es="Diseño" data-en="Design">Diseño</h4>
+            </div>
+            <div class="tech-tecnologias">
+              <i class="fa-brands fa-figma figma"></i>
+              <i class="fa-solid fa-basketball dribble"></i>
+            </div>
+          </div>
+          <div class="tech">
+            <div class="tech-titulo">
+              <h4 data-es="Herramientas" data-en="Tools">Herramientas</h4>
+            </div>
+            <div class="tech-tecnologias">
+              <i class="fa-brands fa-github github"></i>
+              <i class="fa-brands fa-gitlab gitlab"></i>
+              <i class="fa-brands fa-docker docker"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
